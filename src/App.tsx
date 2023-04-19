@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./App.css";
+import Title from "./components/Title";
+import Info from "./components/Info";
+import Portfolio from "./components/Portfolio";
 
 function App() {
+  const [open, set] = useState(true);
+  const [click, setClick] = useState(true);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title open={open} pos={click}>
+        <span style={{ fontSize: "6em" }}>Bitroid</span>
+        <span style={{ fontSize: "2em", textAlign: "right", display: "block" }}>
+          Description
+        </span>
+      </Title>
+
+      <Info />
+      <Portfolio />
+      {/* <button onClick={() => set(!open)}>TITLE</button>
+      <button onClick={() => setClick(!click)}>CLICK</button> */}
     </div>
   );
 }

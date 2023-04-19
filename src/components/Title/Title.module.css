@@ -1,0 +1,14 @@
+.title {
+  /* width: auto; */
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}
+.trailsText {
+  color: black;
+  font-weight: 800;
+  will-change: transform, opacity;
+  overflow: hidden;
+}
