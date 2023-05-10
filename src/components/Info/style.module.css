@@ -1,9 +1,9 @@
 .info {
   position: relative;
-  pointer-events: none;
+  /* pointer-events: none; */
   width: 50%;
   position: fixed;
-  color: white;
+  color: #8d8d8d;
   height: 100%;
   z-index: 6;
   display: flex;
@@ -11,15 +11,28 @@
   justify-content: space-between;
 
   /* background-color: #34ae6b; */
-  /* background: linear-gradient(90deg, #008f3d 0%, rgb(0 28 227 / 74%) 100%); */
-  background: linear-gradient(90deg, #000 0%, rgb(0 28 227 / 74%) 100%);
+  background: #f1f1f3;
+  /* background: linear-gradient(90deg, #000 0%, rgb(0 28 227 / 74%) 100%); */
   padding: 30px;
   padding-bottom: 10px;
 }
+.aboutBlock {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+}
+.aboutBlock img {
+  width: 200px;
+  height: auto;
+}
 .desk {
-  max-width: 80%;
-  padding-top: 6vh;
+  /* max-width: 80%; */
+  color: black;
+  max-width: 421px;
   font-size: 1.5em;
+}
+.desk b {
+  color: #565656;
 }
 .deskfooter {
   position: absolute;
@@ -31,30 +44,67 @@
 }
 .infolist {
   display: flex;
-  justify-content: space-between;
+
+  justify-content: space-around;
 }
 .infoColumn ul {
   list-style: none;
   padding: 0;
+  padding-left: 10px;
 }
 .infoColumn ul li {
   padding-bottom: 10px;
+
+  font-size: 0.75rem;
 }
 .infoColumn span {
   font-weight: bold;
-  font-size: 16px;
-  font-size: 1.4em;
-  color: #20bf63;
+  font-size: 14px;
+  /* font-size: var(--mainFontSize); */
 }
 .infoColumn {
   max-width: 30%;
 }
 .infoColumn b {
-  color: #20bf63;
   padding-right: 4px;
 }
 .logo {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
+}
+.linkBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 10px;
+}
+.linkBlock a {
+  font-weight: normal;
+  font-size: 1em;
+  text-decoration: none;
+  color: #5d5d5d;
+  white-space: nowrap;
+}
+.linkLogo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.flexLi li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  font-size: 1em;
+}
+.flexLi li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.flexLi li a {
+  color: #565656;
+  text-decoration: none;
 }
